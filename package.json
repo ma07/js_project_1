@@ -1,0 +1,39 @@
+{
+  "name": "my-package-json-1",
+  "version": "0.0.1",
+  "description": "Package json for test_project_1",
+  "main": "flickr-fetcher-spec.js",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.bitcomp.intra:magdalena_popinska/test_project_1.git"
+  },
+  "homepage": "https://gitlab.bitcomp.intra/magdalena_popinska/test_project_1",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "cheerio": "^0.22.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^7.1.1",
+    "eslint": "*",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-config-airbnb-base": "11.1.1",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "3.0.2",
+    "eslint-plugin-react": "6.9.0",
+    "mocha": "^3.2.0",
+    "nyc": "^10.2.0"
+  },
+  "scripts": {
+    "test": "mocha --reporter=nyan ./*-spec.js",
+    "coverage": "nyc npm test",
+    "lint": "eslint -c .eslintrc ."
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "engines": {
+    "node": "6.1.0"
+  }
+}
